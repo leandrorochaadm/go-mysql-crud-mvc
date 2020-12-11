@@ -1,7 +1,8 @@
 ## CRUD MVC em Linguagem Go com MySql
 
 **Alguns recursos**
-* Validação campos vazios no POST e PUT
+* Validação campos vazios e nulos no POST e PUT
+* Retornando mensagem de erro json e status code
 
 
 **Comando pra executar no terminal dento da pasta API:** `go run main.go`
