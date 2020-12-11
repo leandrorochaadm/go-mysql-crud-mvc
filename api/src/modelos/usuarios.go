@@ -16,8 +16,8 @@ type Usuario struct {
 }
 
 // Validar vai chamar os métodos para validar e formatar o usuário recebido
-func (usuario *Usuario) Validar() error {
-	if erro := usuario.verificarCampoObrigatorio(); erro != nil {
+func (usuario *Usuario) Validar(etapa string) error {
+	if erro := usuario.verificarCampoObrigatorio(etapa); erro != nil {
 		return erro
 	}
 
@@ -25,7 +25,7 @@ func (usuario *Usuario) Validar() error {
 	return nil
 }
 
-func (usuario *Usuario) verificarCampoObrigatorio() error {
+func (usuario *Usuario) verificarCampoObrigatorio(etapa string) error {
 	if usuario.Nome == "" {
 		return errors.New("O nome é obrigatório e não pode está em branco")
 	}
@@ -34,7 +34,7 @@ func (usuario *Usuario) verificarCampoObrigatorio() error {
 		return errors.New("O email é obrigatório e não pode está em branco")
 	}
 
-	if usuario.Senha == "" {
+	if usuario.Senha == "" && etapa == "cadastro" {
 		return errors.New("A senha é obrigatório e não pode está em branco")
 	}
 
