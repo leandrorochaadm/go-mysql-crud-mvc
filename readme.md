@@ -30,7 +30,7 @@ status: 200 OK
   "id": 1,
   "nome": "Leandro",
   "email": "leandro@user.com",
-  "senha": "123",
+  "senha": "$2a$10$Qq1A4IOZ69EeWyN4ifZGRutYWTRz041zJfPrUohjD3Se2BMEcPSaC",
   "CriadoEm": "0001-01-01T00:00:00Z"
 }
 
