@@ -2,6 +2,7 @@
 
 **Alguns recursos**
 * Validação campos vazios e nulos no POST e PUT
+* Validaçao email
 * Retornando mensagem de erro json e status code
 
 
