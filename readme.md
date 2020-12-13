@@ -4,6 +4,7 @@
 * Validação campos vazios e nulos no POST e PUT
 * Validaçao email
 * Retornando mensagem de erro json e status code
+* Salvando senha com hash no banco de dados
 
 
 **Comando pra executar no terminal dento da pasta API:** `go run main.go`
