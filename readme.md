@@ -10,6 +10,9 @@
 
 **Comando pra executar no terminal dento da pasta API:** `go run main.go`
 
+[![](http://img.youtube.com/vi/I1ItsyI4P9A/0.jpg)](http://www.youtube.com/watch?v=I1ItsyI4P9A "Video de como criar usuarios e logar na api GO-MVC")
+
+
 **HOST:PORT** `localhost:5000/`
 
 ---
