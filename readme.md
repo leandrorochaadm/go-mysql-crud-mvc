@@ -10,6 +10,7 @@
 
 **Comando pra executar no terminal dento da pasta API:** `go run main.go`
 
+clique na imagem abaixo pra ver o video de como criar usuários e logar na API
 [![](http://img.youtube.com/vi/I1ItsyI4P9A/0.jpg)](http://www.youtube.com/watch?v=I1ItsyI4P9A "Video de como criar usuarios e logar na api GO-MVC")
 
 
