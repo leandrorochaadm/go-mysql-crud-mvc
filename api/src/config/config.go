@@ -10,8 +10,11 @@ import (
 )
 
 var (
-	// StringConexaoBanco é a endereço de conexão com o MySQL
+	// StringConexaoBanco é o endereço de conexão com o MySQL
 	StringConexaoBanco = ""
+
+	// StringConexaoSemBanco é o endereço de conexão com o MySQL sem o banco
+	StringConexaoSemBanco = ""
 
 	// Porta onde a API vai rodar
 	Porta = 0
@@ -36,6 +39,10 @@ func Carregar() {
 
 	StringConexaoBanco = fmt.Sprintf("%s:%s@/%s?charset=utf8&parseTime=True&loc=Local",
 		os.Getenv("DB_USUARIO"), os.Getenv("DB_SENHA"), os.Getenv("DB_NOME"),
+	)
+
+	StringConexaoSemBanco = fmt.Sprintf("%s:%s@/",
+		os.Getenv("DB_USUARIO"), os.Getenv("DB_SENHA"),
 	)
 
 	SecretKey = []byte(os.Getenv("SECRET_KEY"))
