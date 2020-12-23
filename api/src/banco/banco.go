@@ -35,7 +35,7 @@ func criarBanco() {
 
 // Conectar abre a conexao com o banco de dados e a retorna
 func Conectar() (*sql.DB, error) {
-	criarBanco()
+	// criarBanco()
 
 	db, erro := sql.Open("mysql", config.StringConexaoBanco)
 	if erro != nil {
